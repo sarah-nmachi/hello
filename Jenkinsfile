@@ -13,7 +13,8 @@ pipeline {
     stage('Build') {
        steps {
          sh '''
-         dotnet build --no-dependencies
+         dotnet run
+         dotnet build 
          '''
        }
     }
